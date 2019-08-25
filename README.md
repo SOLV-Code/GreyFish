@@ -1,6 +1,7 @@
 # GreyFish: A Portal to Agency-Published Fisheries Literature 
 
-Welcome to GreyFish
+Welcome to GreyFish. Check out the [Wiki Page](https://github.com/SOLV-Code/GreyFish/wiki) for a user guide,
+search portal, and further reading.
 
 ### Purpose
 
