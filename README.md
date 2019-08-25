@@ -1,7 +1,8 @@
 # GreyFish: A Portal to Agency-Published Fisheries Literature 
 
-
 Welcome to GreyFish
+
+### Purpose
 
 Our motivation for creating this site is twofold:
 
@@ -21,14 +22,19 @@ its use. A portal like GreyFish helps to reduce the oft-lamented fragmentation
  can go offline in a blink of an eye, and may not come back 
  (e.g. during a departmental reorganization)
 
-Towards both of these ends, GreyFish includes
+### Contents
+Towards both of these ends, GreyFish includes:
 
 * datasets (i.e. citations, with links where available)
 * background information about different report series (e.g. review process)
 * tools (e.g. R scripts for exploratory data analysis)
 * analyses (i.e. visualize and discuss observed patterns)
-* chats with the people who create, use, and manage these publications
 
-*Status Update*: **18,284** reports published since 1959 by 6 agencies from 4 countries,
+### Status Update 
+
+GreyFish currently covers:
+
+* **18,284** reports published since 1959 by 6 agencies from 4 countries,
  spread over 41 report series.
+*  **n** interactive online applications (mostly in *Shiny*)
 
