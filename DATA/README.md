@@ -1,12 +1,11 @@
 
 ## GreyFish Data
 
-* Note: For each data set, there is a README file with source details.
+*Note: For each data set, there is a README file with source details.*
 
 ### Basic Records
 
 These data sets include fields for year, number of authors, and a full citation, as well as a link to the report where available. For each set, there is a csv file for importing into R, and a txt file with background information (e.g. source, download date, search parameters).
-
 
 * Base Dataset - all data below
 * Canada - DFO Science Reports - Research Documents
@@ -16,6 +15,14 @@ These data sets include fields for year, number of authors, and a full citation,
 * Scotland - Marine Scotland and FRS Science Reports
 * USA - ADFG Science Reports
 * USA - NMFS Science Reports
+
+If you want to contribute data sets, refer to this [input file template](http://solv.ca/GreyFish/Tools/GreyFish_DataTemplate.csv).
+Step-by-step instructions for converting a *.bib file are available
+ [here](http://solv.ca/GreyFish/Tools/GreyFish_ConvertingABibFile.zip)
+ (zip with code and sample files)
+
+
+
 
 ### Authorship Mapping
 
