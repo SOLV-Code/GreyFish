@@ -16,13 +16,14 @@ We are compiling an inventory of online apps for fisheries and oceanography to
 identify patterns in what's currently available, and priorities
 for future app development.
 
-Here is an overview of our current data set:
+The plot below has an overview of our current data set. 
+For more detailed explorations, go to [AppTaxonomy](AppTaxonomy/).
 
 <img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png"
 	width="600">
 
 
-For more detailed explorations, go to [AppTaxonomy](AppTaxonomy/).
+
 
 
 ### Scientometric Patterns in Grey Fisheries Literature
