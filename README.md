@@ -31,7 +31,7 @@ Towards both of these ends, GreyFish includes:
 * [SEARCH / CONTEXT](https://github.com/SOLV-Code/GreyFish/wiki/2-Search-Portal): Search Portal and links to background information about different report series (e.g. review process)
 * [FUNCTIONS](FUNCTIONS/): custom R functions used in the analyses 
 * [SCRIPTS](SCRIPTS/):  R code that applies the custom functions
-* [ANALYSES](ANALYSES/): summaries of observed patterns, and associated presentations/posters/papers
+* [RESULTS](RESULTS/): summaries of observed patterns, and associated presentations/posters/papers
 
 ### Status Update 
 
