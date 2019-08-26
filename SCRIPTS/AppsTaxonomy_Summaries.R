@@ -27,13 +27,18 @@ write.csv(summary.topic.general,"DATA/OnlineApplications/GeneratedSummaries/Summ
 
 # Overview plot
 
+png(filename = "DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png",
+    width = 480*2.8, height = 480*2, units = "px", pointsize = 14*2, bg = "white",  res = NA)
 
+par(mai = c(2,7,2,1))
 
-mid.points <- barplot(summary.topic.general$TotalApps,horiz=TRUE,col="white",border="darkblue",width=0.7)
-barplot(summary.topic.general$DataFocus,add=TRUE,horiz=TRUE,col="lightblue", border="darkblue",width=0.7)
-axis(2,at=mid.points,labels =summary.topic.general$TopicLabel,las=2 )
-legend("topright",legend="Data Focused",fill="lightblue",bty="n")
+mid.points <- barplot(rev(summary.topic.general$TotalApps),horiz=TRUE,col="white",
+                      border="darkblue", xlab="Number of Apps")
+barplot(rev(summary.topic.general$DataFocus),add=TRUE,horiz=TRUE,col="lightblue", border="darkblue")
+axis(2,at=mid.points,labels =rev(summary.topic.general$TopicLabel),las=2 )
+legend("topright",legend=c("Data Focused","Model Focused"),fill=c("lightblue","white"),bty="n")
+title(main="Overview of App Topics and Focus")
 
-
+dev.off()
 
 
