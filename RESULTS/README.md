@@ -48,6 +48,6 @@ The plot below shows the change in author numbers across all records in our curr
 For more detailed explorations, go to [GreyLitScientometrics](GreyLitScientometrics/).
 
 <img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/BasicRecords/Screenshots/GreyFish_AllRecords_Snapshot.PNG"
-	width="600">
+	width="900">
 
 

@@ -27,11 +27,11 @@ its use. A portal like GreyFish helps to reduce the oft-lamented fragmentation
 ### Contents
 Towards both of these ends, GreyFish includes:
 
-* DATA: datasets of grey literature(i.e. citations, with links where available) and interactive apps (categorized by topic and focus)
-* CONTEXT: background information about different report series (e.g. review process)
-* FUNCTIONS: custom R functions used in the analyses 
-* SCRIPTS:  R code that applies the custom functions
-* ANALYSES: summaries of observed patterns, and associated presentations/posters/papers
+* [DATA](DATA/): datasets of grey literature(i.e. citations, with links where available) and interactive apps (categorized by topic and focus)
+* [SEARCH / CONTEXT](https://github.com/SOLV-Code/GreyFish/wiki/2-Search-Portal): Search Portal and links to background information about different report series (e.g. review process)
+* [FUNCTIONS](FUNCTIONS/): custom R functions used in the analyses 
+* [SCRIPTS](SCRIPTS/):  R code that applies the custom functions
+* [ANALYSES](ANALYSES/): summaries of observed patterns, and associated presentations/posters/papers
 
 ### Status Update 
 
