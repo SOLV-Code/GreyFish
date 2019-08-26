@@ -19,7 +19,7 @@ These data sets include fields for year, number of authors, and a full citation,
 If you want to contribute data sets, refer to this [input file template](http://solv.ca/GreyFish/Tools/GreyFish_DataTemplate.csv).
 Step-by-step instructions for converting a *.bib file are available
  [here](http://solv.ca/GreyFish/Tools/GreyFish_ConvertingABibFile.zip)
- (zip with code and sample files)
+ (zip with code and sample files).
 
 
 
