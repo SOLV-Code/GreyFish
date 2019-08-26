@@ -10,9 +10,10 @@ one of 5 categories:
 -- | --
 Data Portal | General Model
 Data Vis     | Model Documentation
-             | Analytical Tool
+    --         | Analytical Tool
 
 These categories are defined as:
+
 *Data Portal: mainly focused on providing access to one ore more data sets
 *Data Vis: includes data and various ways of displaying the data
 * General Model: illustrates a basic model or concept  (e.g. fish growth equation)
@@ -34,7 +35,7 @@ To capture this diversity, we assigned subjective scores 1-5 according to the fo
  rough qualitative scales:
  
  **App Feature** | **Score = 1**  | **Score = 5** 
--- | --
+-- | -- | --
 Data Portal |  One or a few  data sets, localized |  many datasets, or large scope
 Data Vis   |  a few basic plots      |  several interactive variations, innovative plots
 General Model | very basic model concept  |  highly specialized complex model
@@ -42,14 +43,18 @@ Model Documentation |  general illustration of a method | detailed results, inte
  Analytical Tool    | try out some alternative settings | load in your own data, full functionality
 
 
-Some examples to illustrate the scoring approach:
+Examples to illustrate the scoring approach:
 
  **App** | **DP Score**  | **DV Score** | **GM Score** | **MD Score** | **AT Score** 
 -- | -- | --| --| --| --
-Basic Predator/Prey Relationship teaching aid | 0  | 0  | 5 | 0  | 0 
+Teaching aid for Holling's  predator functional response,letting users try out parameter values | 0  | 0  | 5 | 0  | 0 
+Data set with individual estimates and fitted Holling curves for many different species and areas, and interactive plotting options | 5  | 3 | 0 | 0  | 0 
+App for fitting Holling curves using various frequentist and Bayesian approaches to your own data, including a few sample data sets, and fancy interactive displays to explore the results | 2  | 5  | 2 | 0  | 5
+App with the specific data, fitting functions, and results for a paper on functional responses, with 
+interactive sensitivity testing, but only a basic plots  | 1  | 2 | 0 | 5 | 0 
 
 
-The figure below shows the aggregate scores for each app in the current inventory, 
+The figure below shows the aggregate scores for each app in the current inventory, with DataScore = DPScore + DVScore and ModelScore = GMScore + MD Score + ATScore
 
 
 
