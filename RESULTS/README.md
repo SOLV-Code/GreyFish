@@ -4,7 +4,7 @@
 ### Taxonomy of Online Apps
 
 <img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png"
-	width="48">
+	width="300">
 
 
 ### Contents
