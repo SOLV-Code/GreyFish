@@ -4,15 +4,7 @@
 ## App Type
 
 We assigned each app in the [inventory](../../DATA/OnlineApplications/) to
-one of 5 categories:
-
-**Data Focused** | **Model Focused**
--- | --
-Data Portal | General Model
-Data Vis     | Model Documentation
-  --         | Analytical Tool
-
-These categories are defined as:
+one of 5 categories, defined as:
 
 * Data Portal: mainly focused on providing access to one ore more data sets
 * Data Vis: includes data and various ways of displaying the data
@@ -50,7 +42,7 @@ Examples to illustrate the scoring approach:
 Teaching aid for Holling's  predator functional response,letting users try out parameter values | 0  | 0  | 5 | 0  | 0 
 Data set with individual estimates and fitted Holling curves for many different species and areas, and interactive plotting options | 5  | 3 | 0 | 0  | 0 
 App for fitting Holling curves using various frequentist and Bayesian approaches to your own data, including a few sample data sets, and fancy interactive displays to explore the results | 2  | 5  | 2 | 0  | 5
-App with the specific data, fitting functions, and results for a paper on functional responses, with interactive sensitivity testing, but only a basic plots  | 1  | 2 | 0 | 5 | 0 
+App with the specific data, fitting functions, and results for a paper on functional responses, with interactive sensitivity testing, but only a few basic plots  | 1  | 2 | 0 | 5 | 0 
 
 
 The figure below shows the aggregate scores for each app in the current inventory, with DataScore = DPScore + DVScore and ModelScore = GMScore + MD Score + ATScore
