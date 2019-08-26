@@ -3,11 +3,8 @@
 
 ### Taxonomy of Online Apps
 
-
-![Overview Plot](https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png)
-
-![Oplot 2](../DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png)
-
+<img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/Summary_ByGeneralTopic.png"
+	width="48">
 
 
 ### Contents
