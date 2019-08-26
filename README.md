@@ -1,5 +1,5 @@
 # GreyFish: A Portal to Agency-Published Fisheries Literature 
-## (Now also covering Interactive Fisheries/Oceanography Apps!)
+**(Now also covering Interactive Fisheries/Oceanography Apps!)**
 
 Welcome to GreyFish. Check out the [Wiki Page](https://github.com/SOLV-Code/GreyFish/wiki) for a user guide,
 search portal, and further reading.
@@ -31,7 +31,7 @@ Towards both of these ends, GreyFish includes:
 * CONTEXT: background information about different report series (e.g. review process)
 * FUNCTIONS: custom R functions used in the analyses 
 * SCRIPTS:  R code that applies the custom functions
-* RESULTS: summaries of observed patterns, and associated presentations/posters/papers
+* ANALYSES: summaries of observed patterns, and associated presentations/posters/papers
 
 ### Status Update 
 
