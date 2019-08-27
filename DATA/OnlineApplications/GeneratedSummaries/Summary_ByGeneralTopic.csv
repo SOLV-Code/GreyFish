@@ -1,10 +1,14 @@
 "TopicLabel","TotalApps","DataFocus","DataPortal","DataVis","GenModel","ModelDoc","AnalyticalTool"
 "Climate-Carbon Emissions",1,0,0,0,0,1,0
 "Climate-Weather projection",1,1,0,1,0,0,0
+"Ecosystem-Habitat",1,1,1,0,0,0,0
+"Ecosystem-Nutrient Cycling",3,0,0,0,3,0,0
 "Ecosystem -Biodiversity",1,0,0,0,0,0,1
+"Fisheries-Decision Support",1,0,0,0,1,0,0
 "Fisheries-Physiology",3,0,0,0,1,1,1
-"Fisheries-Stock Assessment",9,8,1,7,0,1,0
-"Oceanography-Ecosystem Properties",11,8,2,6,0,3,0
-"Oceanography-Marine Sediments",2,0,0,0,0,2,0
+"Fisheries-Stock Assessment",11,10,2,8,0,1,0
+"Oceanography-Ecosystem Properties",4,1,0,1,0,3,0
+"Oceanography-Nutrient Cycling",2,0,0,0,0,2,0
+"Oceanography-Survey Data",7,7,2,5,0,0,0
 "Resource Use-Decision Support",1,0,0,0,1,0,0
 "Resource Use-Risk Assessment",2,0,0,0,0,0,2
