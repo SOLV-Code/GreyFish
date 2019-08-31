@@ -2,7 +2,7 @@
 
 # Setting up
 library(tidyverse)
-apps.data <- read.csv("DATA/OnlineApplications/InteractiveTools_Shiny_2019_08_24.csv", stringsAsFactors = FALSE)
+apps.data <- read.csv("DATA/OnlineApplications/InteractiveTools_Master.csv", stringsAsFactors = FALSE)
 
 
 apps.data <- apps.data %>% mutate(DataScoreTotal = DPScore + DVScore,
@@ -59,7 +59,8 @@ dev.off()
 
 
 
-# ####
+# #### 
+# Tornado plot of Model vs Data focus
 
 model.score.sub <- apps.data %>% select(Domain, NameShort,ModelScoreTotal,DataScoreTotal,TotalScore)  %>% 
                         arrange(desc(ModelScoreTotal),DataScoreTotal) %>%
@@ -85,9 +86,18 @@ abline(v=0,col="darkblue", lwd=2)
 axis(1,at=x.ticks,labels=abs(x.ticks))
 
 title(main="Relative Focus")
-axis(2,at=mid.points,labels =rev(model.score.sub$Label),las=2 )
+axis(2,at=mid.points,labels =rev(model.score.sub$Label),las=2 ,cex.axis=0.8)
 text(5,par("usr")[4],labels="Model Score", xpd=NA,adj=c(0.5,0))
 text(- 5,par("usr")[4],labels="Data Score", xpd=NA,adj=c(0.5,0))
 
 dev.off()
+
+
+
+
+
+# #### 
+# Plot of Documentation Type
+
+
 
