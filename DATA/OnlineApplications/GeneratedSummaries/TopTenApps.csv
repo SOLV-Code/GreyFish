@@ -1,11 +1,11 @@
-"NameShort","TotalScore","DataScoreTotal"
-"NZSeabirdThreats",18,6
-"SalmonForecastR",17,5
-"SeabirdCollRisk",17,5
-"SpecSensChemHaz",16,3
-"BCSalmonStatus",15,6
-"DetidingDissOxCases",15,4
-"SedimentCycleONC",14,3
-"BaysVBGMFit",13,2
-"DetidingDissOxSims",12,1
-"DNABioDiv",12,5
+"Domain","NameShort","TotalScore","DataScoreTotal"
+"Resource Use","NZSeabirdThreats",18,6
+"Fisheries","SalmonForecastR",17,5
+"Resource Use","SeabirdCollRisk",17,5
+"Resource Use","SpecSensChemHaz",16,3
+"Fisheries","BCSalmonStatus",15,6
+"Oceanography","DetidingDissOxCases",15,4
+"Oceanography","SedimentCycleONC",14,3
+"Fisheries","BaysVBGMFit",13,2
+"Oceanography","DetidingDissOxSims",12,1
+"Ecosystem","DNABioDiv",12,5

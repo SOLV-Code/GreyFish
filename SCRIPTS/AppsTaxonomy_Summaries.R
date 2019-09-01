@@ -32,7 +32,7 @@ write.csv(summary.topic.general,"DATA/OnlineApplications/GeneratedSummaries/Summ
 
 
 
-best.apps <- apps.data %>%  arrange(desc(TotalScore),NameShort) %>% select(NameShort,TotalScore,DataScoreTotal)
+best.apps <- apps.data %>%  arrange(desc(TotalScore),NameShort) %>% select(Domain,NameShort,TotalScore,DataScoreTotal)
 
 write.csv(best.apps[1:10,],"DATA/OnlineApplications/GeneratedSummaries/TopTenApps.csv",row.names=FALSE)
 
@@ -61,7 +61,7 @@ dev.off()
 
 
 png(filename = "DATA/OnlineApplications/GeneratedPlots/Large/Summary_ByGeneralTopic_Large.png",
-    width = 480*2.8*2, height = 480*2*2, units = "px", pointsize = 14*4, bg = "white",  res = NA)
+    width = 480*2.8*1.7, height = 480*2*2, units = "px", pointsize = 14*4, bg = "white",  res = NA)
 
 par(mai = c(4,14,4,2))
 
@@ -127,7 +127,13 @@ abline(v=0,col="darkblue", lwd=2)
 axis(1,at=x.ticks,labels=abs(x.ticks))
 
 title(main="Relative Focus")
-axis(2,at=mid.points,labels =rev(model.score.sub$Label),las=2 ,cex.axis=0.8)
+axis(2,at=mid.points,labels =rev(model.score.sub$Label),las=2 ,cex.axis=0.75,col.axis="grey")
+
+ocean.idx <- (1:length(model.score.sub$Label))[grepl("Ocea",rev(model.score.sub$Label))]
+axis(2,at=mid.points[ocean.idx],labels =rev(model.score.sub$Label)[ocean.idx],las=2,col.axis="darkblue" ,cex.axis=0.75 )
+
+
+
 text(5,par("usr")[4],labels="Model Score", xpd=NA,adj=c(0.5,0))
 text(- 5,par("usr")[4],labels="Data Score", xpd=NA,adj=c(0.5,0))
 dev.off()
@@ -136,18 +142,28 @@ dev.off()
 # Plot of Top Ten Apps
 
 png(filename = "DATA/OnlineApplications/GeneratedPlots/Large/TopTenApps_TotalScore_Large.png",
-    width = 480*2.8, height = 480*3, units = "px", pointsize = 14*2.5, bg = "white",  res = NA)
+    width = 480*2.9, height = 480*3, units = "px", pointsize = 14*2.5, bg = "white",  res = NA)
 
-par(mai = c(2.5,6,1.5,1))
+par(mai = c(2.5,6.3,1.5,1))
 
 mid.points <- barplot(rev(best.apps$TotalScore[1:10]),horiz=TRUE,col="lightblue",
                       border="darkblue", xlab="Total Score",xlim=c(0,25))
 barplot(rev(best.apps$DataScoreTotal[1:10]),add=TRUE,horiz=TRUE,col="darkblue", density=10, border="darkblue")
-axis(2,at=mid.points,labels =rev(best.apps$NameShort[1:10]),las=2,cex=1.2 )
+axis(2,at=mid.points,labels =rev(best.apps$NameShort[1:10]),las=2,cex.axis=1.2 ,col.axis="grey")
+
+ocean.idx <- (1:length(best.apps$Domain[1:10]))[grepl("Ocea",rev(best.apps$Domain[1:10]))]
+axis(2,at=mid.points[ocean.idx],labels =rev(best.apps$NameShort[1:10])[ocean.idx],las=2,col.axis="darkblue" ,cex.axis=1.2)
+
+
+
 legend("bottomright",legend=c("Data Score","Model Score"),col="darkblue",fill=c("lightblue","lightblue"),
         bty="n",cex=1.1)
 legend("bottomright",legend=c("Data Score","Model Score"),col="darkblue",fill=c("lightblue","darkblue"),
        density=c(NA,10),bty="n",cex=1.1)
+
+abline(v=25,col="red",lty=2)
+text(25,par("usr")[4],labels = "Perfect\nScore",col="red",xpd=NA,adj=c(0.5,0))
+
 
 title(main="Top Ten Apps")
 
