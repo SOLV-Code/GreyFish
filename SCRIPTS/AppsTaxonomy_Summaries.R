@@ -115,11 +115,39 @@ doc.byapptype <- apps.data %>%
                     summarise(NumApps = n()) %>%
                     spread(AppType,NumApps) 
 
-as.matrix(doc.byapptype )
+doc.byapptype <- doc.byapptype[c(3,1,2),]
 
-barplot(as.matrix(doc.byapptype)[,-1])
-
-
+doc.byapptype[is.na(doc.byapptype)] <- 0 
 
 
+
+y.lim <- range(pretty(c(-max(doc.byapptype[3,][-1],na.rm = TRUE),max(colSums(doc.byapptype[c(1,2),-1],na.rm=TRUE)))))
+
+png(filename = "DATA/OnlineApplications/GeneratedPlots/IcebergPlot_DocType.png",
+    width = 480*2.8*2, height = 480*3*2, units = "px", pointsize = 14*5, bg = "white",  res = NA)
+
+
+plot(1:5,1:5,type="n",xlim = c(0,6), ylim = y.lim, xlab="",ylab="Num Apps",bty="n",axes=FALSE)
+
+axis(2,at=pretty(y.lim),labels= abs(pretty(y.lim)))
+
+
+# need to streamline and generalize this extraxtion step
+prim.vec <- unlist(doc.byapptype[1,][-1][c(2:5,1)])
+grey.vec <- unlist(doc.byapptype[2,][-1][c(2:5,1)])
+web.vec <- unlist(doc.byapptype[3,][-1][c(2:5,1)])
+type.labels <- c("Data\nPortal","Data\nVis","Gen\nMod","Mod\nDoc","Tool")
+
+rect( c(1:5)-0.5 , 0, c(1:5)+0.5, grey.vec,col="lightblue",border="darkblue",density=10,lwd=2)
+rect( c(1:5)-0.5 , grey.vec, c(1:5)+0.5, grey.vec+prim.vec,col="lightblue",border="darkblue",lwd=2)
+rect( c(1:5)-0.5 , -web.vec, c(1:5)+0.5, 0 ,col="white",border="darkblue",lwd=2)
+text(1:5,par("usr")[4],labels =  type.labels ,xpd=NA,font=2,cex=1.2,col="darkblue"    )
+
+abline(h=0,lwd=3,col="red",lty=1)
+
+text(5.55, c(prim.vec[5]/2+grey.vec[5],grey.vec[5]/2,-web.vec[5]/2),
+     labels=c("Primary","Grey","Online Only"),xpd=NA,adj=0)
+
+
+dev.off()
             
