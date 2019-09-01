@@ -99,5 +99,27 @@ dev.off()
 # #### 
 # Plot of Documentation Type
 
+doc.overall<- apps.data %>% 
+                   group_by(DocCategory) %>% 
+                    summarise(NumApps = n()) 
+doc.overall
+
+doc.bydomain <- apps.data %>% 
+                      group_by(Domain,DocCategory) %>% 
+                      summarise(NumApps = n()) %>%
+                      spread(Domain,NumApps)
+doc.bydomain
+
+doc.byapptype <- apps.data %>% 
+                    group_by(AppType,DocCategory) %>% 
+                    summarise(NumApps = n()) %>%
+                    spread(AppType,NumApps) 
+
+as.matrix(doc.byapptype )
+
+barplot(as.matrix(doc.byapptype)[,-1])
 
 
+
+
+            
