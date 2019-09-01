@@ -4,14 +4,13 @@
 "Ecosystem-Biodiversity",1,0,0,0,0,0,1
 "Ecosystem-Ecosystem Properties",1,1,0,1,0,0,0
 "Ecosystem-Habitat",3,3,1,2,0,0,0
-"Ecosystem-Nutrient Cycling",4,0,0,0,4,0,0
 "Ecosystem-Population Dynamics",1,0,0,0,1,0,0
 "Fisheries-Management",1,0,0,0,1,0,0
 "Fisheries-Physiology",4,0,0,0,1,2,1
 "Fisheries-Stock Assessment",20,17,5,12,0,1,2
 "Fisheries-Survey Data",1,1,1,0,0,0,0
 "Oceanography-Ecosystem Properties",4,1,0,1,0,3,0
-"Oceanography-Nutrient Cycling",2,0,0,0,0,2,0
+"Oceanography-Nutrient Cycling",6,0,0,0,4,2,0
 "Oceanography-Survey Data",14,14,9,5,0,0,0
 "Resource Use-Management",1,0,0,0,1,0,0
 "Resource Use-Risk Assessment",3,0,0,0,0,0,3
