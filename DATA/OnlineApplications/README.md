@@ -1,13 +1,8 @@
 
 ## Online Applications
 
+This data sets includes links to the apps as well as fields for topic (e.g. "Fish Biology", app type (e.g. DataVis), status (e.g. "active"), documentation type (e.g. "tech report"), and access type (e.g. "free & public").
 
-
-
-
-### Searchable inventory
-
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrfgKaXclantoQ4d?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+You can download the *.csv file from here, or go to the [online interface](www.solv.ca/GreyFish) wher you can sort/filter/group the records.
 
 
