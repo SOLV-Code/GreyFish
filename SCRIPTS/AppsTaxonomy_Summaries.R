@@ -115,7 +115,7 @@ dev.off()
 
 
 png(filename = "DATA/OnlineApplications/GeneratedPlots/Large/TornadoPlot_AppFocus_Large.png",
-    width = 480*2.8*2, height = 480*3*2.5, units = "px", pointsize = 14*5, bg = "white",  res = NA)
+    width = 480*2.8*1.5, height = 480*3*2.5, units = "px", pointsize = 14*4.7, bg = "white",  res = NA)
 
 par(mai = c(4,14,4,2))
 
@@ -134,9 +134,11 @@ axis(2,at=mid.points[ocean.idx],labels =rev(model.score.sub$Label)[ocean.idx],la
 
 
 
-text(5,par("usr")[4],labels="Model Score", xpd=NA,adj=c(0.5,0))
-text(- 5,par("usr")[4],labels="Data Score", xpd=NA,adj=c(0.5,0))
+text(7,par("usr")[4],labels="Model Score", xpd=NA,adj=c(0.5,0))
+text(- 7,par("usr")[4],labels="Data Score", xpd=NA,adj=c(0.5,0))
 dev.off()
+
+
 
 
 # Plot of Top Ten Apps
