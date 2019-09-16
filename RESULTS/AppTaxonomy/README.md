@@ -1,5 +1,12 @@
 # Taxonomy of Online Apps
 
+## Posters
+
+Tunon and Pestal (2019) Interactive Online Tools: The Future of Grey Literature. OceanObs19
+ ([pdf](http://solv.ca/GreyFish/Analyses/POSTER_OceanObs2019_Tunon&Pestal_ShinyGreyLit.pdf)
+
+Tunon and Pestal (2019) From Data Displays To Data Analyses: Building Interactive Tools That Encourage Active Exploration of Complex Data and Models. OceanObs19 ([pdf](http://solv.ca/GreyFish/Analyses/POSTER_OceanObs2019_Pestal&Tunon_InteractiveTools.pdf)
+
 
 ## App Type
 
