@@ -50,7 +50,7 @@ The figure below shows the aggregate scores for each app in the current inventor
 
 
 <img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/TopTenApps_TotalScore.png"
-	width="800">
+	width="400">
 
 
 <img src="https://github.com/SOLV-Code/GreyFish/blob/master/DATA/OnlineApplications/GeneratedPlots/TornadoPlot_AppFocus.png"
