@@ -171,8 +171,35 @@ title(main="Top Ten Apps")
 
 dev.off()
 
+# small
+
+png(filename = "DATA/OnlineApplications/GeneratedPlots/TopTenApps_TotalScore.png",
+    width = 480*1.9, height = 480*2, units = "px", pointsize = 14*1.65, bg = "white",  res = NA)
+
+par(mai = c(1.8,4.8,1,1))
+
+mid.points <- barplot(rev(best.apps$TotalScore[1:10]),horiz=TRUE,col="lightblue",
+                      border="darkblue", xlab="Total Score",xlim=c(0,25))
+barplot(rev(best.apps$DataScoreTotal[1:10]),add=TRUE,horiz=TRUE,col="darkblue", density=10, border="darkblue")
+axis(2,at=mid.points,labels =rev(best.apps$NameShort[1:10]),las=2,cex.axis=1.2 ,col.axis="grey")
+
+ocean.idx <- (1:length(best.apps$Domain[1:10]))[grepl("Ocea",rev(best.apps$Domain[1:10]))]
+axis(2,at=mid.points[ocean.idx],labels =rev(best.apps$NameShort[1:10])[ocean.idx],las=2,col.axis="darkblue" ,cex.axis=1.2)
 
 
+
+legend("bottomright",legend=c("Data Score","Model Score"),col="darkblue",fill=c("lightblue","lightblue"),
+       bty="n",cex=1.1)
+legend("bottomright",legend=c("Data Score","Model Score"),col="darkblue",fill=c("lightblue","darkblue"),
+       density=c(NA,10),bty="n",cex=1.1)
+
+abline(v=25,col="red",lty=2)
+text(25,par("usr")[4],labels = "Perfect\nScore",col="red",xpd=NA,adj=c(0.5,0))
+
+
+title(main="Top Ten Apps")
+
+dev.off()
 
 
 
