@@ -9,6 +9,7 @@ apps.data <- apps.data %>% mutate(DataScoreTotal = DPScore + DVScore,
                                   ModelScoreTotal = GMScore + MDScore + ATScore,
                                   TotalScore = DPScore + DVScore + GMScore + MDScore + ATScore
                                   )
+names(apps.data)[1] <- "NameShort"
 
 
 
