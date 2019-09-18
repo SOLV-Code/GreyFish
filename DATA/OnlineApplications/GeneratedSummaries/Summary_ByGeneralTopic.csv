@@ -5,6 +5,7 @@
 "Ecosystem-Ecosystem Properties",1,1,0,1,0,0,0
 "Ecosystem-Habitat",3,3,1,2,0,0,0
 "Ecosystem-Population Dynamics",1,0,0,0,1,0,0
+"Ecosystem-Survey Data",1,1,0,1,0,0,0
 "Fisheries-Forecasting",1,0,0,0,0,0,1
 "Fisheries-Management",1,0,0,0,1,0,0
 "Fisheries-Physiology",4,0,0,0,1,2,1
@@ -13,6 +14,7 @@
 "Oceanography-Ecosystem Properties",4,1,0,1,0,3,0
 "Oceanography-Forecasting",1,1,0,1,0,0,0
 "Oceanography-Nutrient Cycling",6,0,0,0,4,2,0
-"Oceanography-Survey Data",15,15,9,6,0,0,0
+"Oceanography-Status Assessment",1,0,0,0,0,0,1
+"Oceanography-Survey Data",19,19,10,9,0,0,0
 "Resource Use-Management",1,0,0,0,1,0,0
 "Resource Use-Risk Assessment",3,0,0,0,0,0,3
