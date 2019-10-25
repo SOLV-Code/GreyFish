@@ -39,5 +39,5 @@ GreyFish currently covers:
 
 * **18,284** reports published since 1959 by 6 agencies from 4 countries,
  spread over 41 report series.
-*  **66** interactive online applications (mostly in *Shiny*)
+*  **73** interactive online applications (mostly in *Shiny*)
 
